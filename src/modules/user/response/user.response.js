@@ -1,5 +1,4 @@
 const User = require('../models/user.model');
-// const i18n = require('../config/i18n');
 
 const userObj = {
   id: null,
@@ -30,13 +29,17 @@ const userObj = {
  * @returns {Array}
  */
 const forObj = async (user) => {
+  // check if not an empty object
   if (JSON.stringify(user) === '{}') {
     return {};
   }
+
+  // check if instance of model
   if (!(user instanceof User)) {
-    // throw new Error(i18n.__('error.something_went_wrong'));
-    throw new Error('something_went_wrong');
+    throw new Error('Something went wrong');
   }
+  
+  // prepare response
   userObj.id = user.id || null;
   userObj.name = user.name || null;
   userObj.email = user.email || null;

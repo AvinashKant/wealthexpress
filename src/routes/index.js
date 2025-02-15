@@ -5,7 +5,7 @@ const userRoute = require('../modules/user/routes/user.route');
 const router = express.Router();
 const defaultRoutes = [
     {
-      path: '/transactions',
+      path: '/',
       route: transactionRoute,
     },
     {

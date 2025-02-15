@@ -6,8 +6,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["wealth", "management", "system", "dashboard"],
+  "authors": [
+    {
+      "name": "Avinash Kant",
+      "email": "developer.avinashkant@gmail.com",
+      "role": "Developer"
+    }
+  ],
   "license": "ISC",
   "description": "",
   "dependencies": {
